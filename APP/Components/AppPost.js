@@ -1,13 +1,12 @@
 import React, {useState} from 'react';
 import { Image, View, StyleSheet, TouchableOpacity} from 'react-native';
-import { backgroundColor } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
+
 import AppIcon from './AppIcon';
 import AppColour from './AppColour';
 import AppText from './AppText';
 import { Swipeable } from 'react-native-gesture-handler';
 
 
-import DataManager from '../config/DataManager';
 
 function AppPost({image,title,location,summary,tag,update,onSwipeLeft,onPress}) {
     const[count,setCount]=useState(1);

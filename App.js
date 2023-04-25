@@ -10,24 +10,17 @@ import WelcomeScreen from './APP/AppScreen/WelcomeScreen';
 
 import { NavigationContainer } from "@react-navigation/native";
 import AppNavigator from './APP/Navigation/AppNavigator';
-
+import AppScreen from './APP/AppScreen/AppScreen';
 
 
 
 
 export default function App() {
   return (
-  <NavigationContainer>
-  <AppNavigator />
+ 
+    <NavigationContainer>
+    <AppNavigator/>
   </NavigationContainer>
-
-
-  
-
-
   );
 }
 
-const styles = StyleSheet.create({
-
-});

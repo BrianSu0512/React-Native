@@ -1,7 +1,7 @@
 import React from 'react';
-import {ImageBackground, StyleSheet  } from 'react-native';
+import {ImageBackground, StyleSheet } from 'react-native';
 
-const blurRadiusValue = Platform.OS ==='android' ?0.2 :1;
+const blurRadiusValue = Platform.OS ==='android' ?0.7 :6;
 
 function AppBackground({children}) {
     return (

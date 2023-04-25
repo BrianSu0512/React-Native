@@ -10,6 +10,7 @@ import WelcomeScreen from '../AppScreen/WelcomeScreen';
 import MemoriesScreen from '../AppScreen/MemoriesScreen';
 import MoreInfScreen from '../AppScreen/MoreInfScreen';
 import NewPostsScreen from '../AppScreen/NewPostsScreen';
+import EditScreen from '../AppScreen/EditScreen';
 
 
 
@@ -30,6 +31,8 @@ return (
     <Stack.Screen name="MemoriesScreen" component={MemoriesScreen}/>
     <Stack.Screen name="MoreInfScreen" component={MoreInfScreen}/>
     <Stack.Screen name="NewPostsScreen" component={NewPostsScreen}/>
+    <Stack.Screen name="EditScreen" component={EditScreen}/>
+    
     
 
 </Stack.Navigator>

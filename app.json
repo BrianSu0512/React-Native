@@ -27,6 +27,7 @@
     },
     "web": {
       "favicon": "./APP/assets/favicon.png"
-    }
+    },
+    "description": ""
   }
 }

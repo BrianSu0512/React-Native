@@ -17,6 +17,7 @@ function MoreInfScreen({props,route,navigation,navigation: { goBack } }) {
     const data=[route.params.paramPost];
 
     const[post, setPost] =  useState(data);
+    console.log(post[0].id)
 
     const handleDelete = (post) => {
         setPost('');
@@ -24,26 +25,7 @@ function MoreInfScreen({props,route,navigation,navigation: { goBack } }) {
         commonData.deletePost(post);
         navigation.navigate("MemoriesScreen")
     }
-    const[count,setCount]=useState(1);
 
-    const[heart,setHeart]=useState(<AppIcon
-        name="heart"
-        size={55}
-        iconColor={AppColour.white}
-        style={styles.icon}
-    />)
-
-    const colourIcon=()=>[setCount(preCount=>preCount+1),count %2 ===0 ?setHeart(<AppIcon
-        name="heart"
-        size={55}
-        iconColor={AppColour.white}
-        style={styles.icon}
-    />):setHeart(<AppIcon
-        name="heart"
-        size={55}
-        iconColor={AppColour.red}
-        style={styles.icon}
-    />)]
     return (
         <AppScreen>
         <AppBackground>
@@ -64,8 +46,14 @@ function MoreInfScreen({props,route,navigation,navigation: { goBack } }) {
                 <AppText style={styles.logoText}>Memories</AppText>
             </View>
 
-            <TouchableOpacity onPress={colourIcon}>
-                {heart}
+            <TouchableOpacity onPress={()=>navigation.navigate("EditScreen",{
+                                paramPost: data
+                            })}>
+                <AppIcon
+                        name="lead-pencil"
+                        size={50}
+                        style={styles.captionIcon}
+                    />
             </TouchableOpacity>
             </View>
 

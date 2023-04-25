@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Text,StyleSheet } from 'react-native';
 import { Platform } from 'react-native-web';
-import { color } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
 import AppColour from '../Components/AppColour';
 
 

@@ -83,6 +83,11 @@ export default class DataManager  {
         this.posts.push(post);
     }
 
+    editPost(post){
+        console.log("line 87",post.id-1)
+        return this.posts.splice(post.id-1,1,post)
+    }
+
     deletePost(post){
         const newPosts=this.posts.filter (item => item.id !== post.id);
         
